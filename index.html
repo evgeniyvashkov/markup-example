@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru" class="mainPage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="бизнес школа">
+    <title>Бизнес школа</title>
+    <link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+</head>
+<body>
+<div class="customLine"></div>
+<header>
+    <a href="index.html" class="logotype">BUSINES SCHOOL</a>
+
+    <nav>
+        <div class="trigger">
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">О нас</a></li>
+            <li class="subMenu">
+                <a href="events.html">Мероприятия</a>
+                <ul class="dropDownMenu">
+                    <li><a href="course.html">Курсы</a></li>
+                    <li><a href="events.html">Семинары</a></li>
+                    <li><a href="events.html">Конференции</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<!--ФОновое изображение приходит в style="" для упращения работы с БД-->
+
+<section class=" mainInformation" style="background: url('images/mainBannerImage.png') no-repeat center;">
+    <div class="container">
+        <h1>Бизнес-курсы</h1>
+        <h2>Семинары</h2>
+        <h3>Хакатоны</h3>
+        <button>подробнее</button>
+    </div>
+</section>
+
+<section class=" events">
+    <h2>МЕРОПРИЯТИЯ ШКОЛЫ</h2>
+    <div class="container">
+        <div class="eventItem">
+            <div class="eventDescription">
+                <h4>Курсы</h4>
+                <p>Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Уникальные программы.
+                    Уникальные программы. (200 СИМВОЛОВ)</p>
+            </div>
+            <div class="eventImage">
+                <img src="images/evenItemCourses.png" alt="курсы">
+            </div>
+            <a href="#" title="подробнее">подробнее</a>
+        </div>
+
+        <div class="eventItem">
+            <div class="eventDescription">
+                <h4>Семинры</h4>
+                <p>Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Уникальные программы.
+                    Уникальные программы. (200 СИМВОЛОВ)</p>
+            </div>
+            <div class="eventImage">
+                <img src="images/evenItemSeminars.png" alt="семинары">
+            </div>
+            <a href="#" title="подробнее">подробнее</a>
+        </div>
+
+        <div class="eventItem">
+            <div class="eventDescription">
+                <h4>хакатоны</h4>
+                <p>Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Современные обучающие программы. Хорошая организация. Более 15 программ, индивидуальный подход.
+                    Уникальные программы.
+                    Уникальные программы. (200 СИМВОЛОВ)</p>
+            </div>
+            <div class="eventImage">
+                <img src="images/evenItemHackathons.png" alt="хакатоны">
+            </div>
+            <a href="#" title="подробнее">подробнее</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="statistic">
+    <div class="container">
+
+
+        <div class="statisticItemContainer">
+            <div class="chart" data-percent="40">
+                <div class="statisticCount">20</div>
+                <div class="statisticTitle">программ</div>
+            </div>
+        </div>
+
+        <div class="statisticItemContainer">
+            <div class="chart" data-percent="35">
+                <div class="statisticCount">15</div>
+                <div class="statisticTitle">спикеров</div>
+            </div>
+        </div>
+
+
+        <div class="statisticItemContainer">
+            <div class="chart" data-percent="55">
+                <div class="statisticCount">19</div>
+                <div class="statisticTitle">проектов</div>
+            </div>
+        </div>
+
+
+        <div class="statisticItemContainer">
+            <div class="chart" data-percent="73">
+                <div class="statisticCount">500</div>
+                <div class="statisticTitle">посетителей</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="programs">
+    <h2>Учебные программы</h2>
+    <div class="container">
+
+        <!--Каждый курс находится в div.programItem
+            Внутри всегда есть IMG . Если курс не кастомный(нет фоновой картинки)
+            тег img скрывается стилями.
+            Когда курс катсомный добавляется класс programItemOdd, который
+            отображает тег img, добавляет темный фон для курса и меняет цвет
+            названия курса
+        -->
+
+
+        <a href="#" class="programItem programItemOdd">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon1.png">
+                </div>
+                <h4>Интернет-маркетинг</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem ">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon2.png">
+                </div>
+                <h4>Аналитика</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem programItemOdd">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon3.png">
+                </div>
+                <h4>SEO</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem ">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon4.png">
+                </div>
+                <h4>БИЗНЕС-ПЛАНИРОВАНИЕ</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem ">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon5.png">
+                </div>
+                <h4>Интернет-маркетинг</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem programItemOdd">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon6.png">
+                </div>
+                <h4>Аналитика</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem ">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon7.png">
+                </div>
+                <h4>SEO</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+
+        <a href="#" class="programItem programItemOdd">
+            <img src="images/programs/coursItemBackground.png">
+            <div class="programItemContent">
+                <div class="programItemIcon">
+                    <img src="images/programs/icon8.png">
+                </div>
+                <h4>БИЗНЕС-ПЛАНИРОВАНИЕ</h4>
+                <p>Создание предприятия. Основные этапы методы поиска (100 СИМВОЛОВ) Создание предприятия dasd
+                    qwertyuia </p>
+            </div>
+        </a>
+    </div>
+</section>
+<div class="customLine"></div>
+
+<section class="reviews">
+    <h2>Отзывы</h2>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar1.png">
+                    </div>
+                    <h5>Леонид, Минск</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход.
+                        Успехов в развитии) 200 СИМВОЛОВ</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar2.png">
+                    </div>
+                    <h5>Валерия, Жодино</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа.</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar3.png">
+                    </div>
+                    <h5>Тимофей Иванович, Минск</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход.
+                        Успехов в развитии)</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar1.png">
+                    </div>
+                    <h5>Леонид, Минск</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход.
+                        Успехов в развитии)</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar2.png">
+                    </div>
+                    <h5>Валерия, Жодино</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа.</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="review">
+                    <div class="decorationLine"></div>
+                    <div class="reviewerAvatar">
+                        <img src="images/reviews/reviewAvatar3.png">
+                    </div>
+                    <h5>Тимофей Иванович, Минск</h5>
+                    <p>Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход. Успехов в
+                        развитии). Рекомендую! Курсы очень помогли в развитии, отличная школа, интересных подход.
+                        Успехов в развитии)</p>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footerNavigation">
+            <div class="menuLinks">
+                <a href="#">О нас</a>
+                <a href="#">Блог</a>
+                <a href="#">Партнеры</a>
+            </div>
+
+            <div class="menuLinksExpanded">
+                <div class="event">
+                    <a href=#">Мероприятия</a>
+                    <div class="dropDownMenu">
+                        <div><a href="#">Курсы</a></div>
+                        <div><a href="#">Семинары</a></div>
+                        <div><a href="#">Конференции</a></div>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <a href="#">Контакты</a>
+                    <div class="dropDownMenu">
+                        <div class="phone">+37529 604-58-13</div>
+                        <div class="mail">b.school@gmail.com</div>
+                        <div class="address">ул. К. Маркса 70</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social">
+                <div class="footerLogotype"></div>
+                <div class="socialBlock">
+                    <a href="#" class="vk">VK</a>
+                    <a href="#" class="linked">LINKED IN</a>
+                    <a href="#" class="gmail">GMAIL</a>
+                    <a href="#" class="twitter">TWITTER</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="copyright">Copyright © - Business school 2018</div>
+</footer>
+
+</body>
+</html>

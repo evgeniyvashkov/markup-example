@@ -1,0 +1,37 @@
+header {
+    .clearfix();
+    position: relative;
+    max-width: @mainWidthContent;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: @white;
+    box-sizing: border-box;
+
+    .logotype {
+        width: 250px;
+        height: 120px;
+        float: left;
+        background: url("/images/logo.png") center no-repeat;
+        font-size: 0;
+    }
+
+    nav {
+        float: right;
+    }
+}
+
+@media (@maxWidth980px) {
+    header {
+        padding-left: 30px;
+    }
+}
+
+@media (@maxWidth480px) {
+    header {
+        .logotype {
+            width: 170px;
+            background-size: contain
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.mainInformation {
+    width: 100%;
+    height: 929px;
+
+    //фоны для страниц
+    //mainpage bg
+    .mainPage & {
+        //background: url("/images/mainBannerImage.png") no-repeat center;
+    }
+
+    //direction bg
+    .directions & {
+
+    }
+
+
+    .container {
+        padding-top: 150px;
+        text-align: right;
+
+        h1 {
+            .akrobatExtralight();
+            color: #f18420;
+            font-size: @fontSize90;
+        }
+
+        h2 {
+            margin-top: -10px;
+            font-weight: 400;
+            color: #41434b;
+            font-size: @fontSize108;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            .akrobatThin();
+            color: #15161b;
+            margin-top: -50px;
+            font-size: @fontSize140;
+            text-transform: lowercase;
+        }
+
+        button {
+            margin: 45px 100px 0 0;
+            padding: 11px 0 15px;
+        }
+    }
+}
+
+@media (@maxWidth980px) {
+    .mainInformation {
+        height: 550px;
+
+        .container {
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (@maxWidth767px) {
+    .mainInformation {
+        position: relative;
+        height: 420px;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            font-size: @fontSize12;
+            position: relative;
+            z-index: 5;
+            text-align: center;
+
+            h2 {
+                color: white;
+            }
+
+            h3 {
+                color: wheat;
+            }
+
+            button {
+                margin: 45px auto;
+            }
+        }
+    }
+}
+
+@media (@maxWidth480px) {
+    .mainInformation {
+        height: 300px;
+        padding-top: 30px;
+
+        .container {
+            padding-top: 10px;
+            font-size: @fontSize8;
+
+            h2 {
+                margin-top: 0;
+            }
+
+            h3 {
+                margin-top: -20px;
+            }
+
+            button {
+                margin: 25px auto 0;
+            }
+        }
+
+    }
+}

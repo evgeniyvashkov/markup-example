@@ -1,0 +1,16 @@
+//Миксин для иконок передается имя картинки к примеру vk без ковычек
+//в результате получется класс с фоном + hover
+.iconStyle(@imageNameDefault) {
+    .@{imageNameDefault} {
+        background: url("/images/social/@{imageNameDefault}.png") center no-repeat;
+
+        &:hover {
+            background: url("/images/social/@{imageNameDefault}Hover.png") center no-repeat;
+        }
+    }
+}
+
+.iconStyle(vk);
+.iconStyle(gmail);
+.iconStyle(twitter);
+.iconStyle(linked);

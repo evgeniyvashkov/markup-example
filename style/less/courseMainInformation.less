@@ -1,0 +1,59 @@
+.courseMainInformation {
+    max-width: 900px;
+    float: left;
+    .courseImage {
+        margin-bottom: 10%;
+        img {
+            max-width: 100%;
+            max-height: 350px;
+        }
+    }
+
+    .courseDate {
+        height: 60px;
+        padding: 0 25px;
+        float: left;
+        color: #262832;
+        font-size: @fontSize30;
+        line-height: 60px;
+        background: #e9eff3;
+    }
+
+    button {
+        margin-top: 5px;
+        float: right;
+        min-width: 200px;
+        padding: 10px 15px 15px;
+        font-size: @fontSize22;
+    }
+
+    .courseDescription {
+
+        &:before {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        h2 {
+            .akrobatSemiBold();
+            padding: 50px 0 35px;
+        }
+
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media (@maxWidth480px) {
+    .courseMainInformation {
+        .courseDate {
+            padding: 0 15px;
+        }
+
+        button {
+            min-width: 150px;
+        }
+    }
+}

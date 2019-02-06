@@ -1,0 +1,192 @@
+nav {
+    header & {
+        .trigger {
+            display: none;
+
+            width: 50px;
+            height: 50px;
+
+        }
+
+        ul {
+            background: @white;
+            li {
+                display: inline-block;
+                margin: 0 0 0 46px;
+                padding: 50px 0;
+                position: relative;
+
+                > a {
+                    color: #15161b;
+                    font-size: @fontSize22;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #81888d;
+                    }
+                }
+
+                &.subMenu {
+                    &:hover {
+                        .dropDownMenu {
+                            display: block;
+                            max-height: 150px;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .dropDownMenu {
+                    opacity: 0;
+                    width: 170px;
+                    position: absolute;
+                    top: 90px;
+                    left: -25px;
+                    padding: 0 0 20px 25px;
+                    box-sizing: border-box;
+                    border-top: 2px solid #fe9a3f;
+                    transition: opacity 0.3s;
+
+                    li {
+                        display: block;
+                        padding: 20px 0 0;
+                        margin: 0;
+                        a {
+                            color: #74797d;
+                            transition: all 0.3s;
+                            text-transform: capitalize;
+
+                            &:hover {
+                                padding-left: 7px;
+                                color: #15161b;
+                                border-left: 3px solid #fe9a3f;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (@maxWidth980px) {
+    nav {
+        header & {
+            .trigger {
+                display: block;
+
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+
+                span {
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transition: all, 0.2s;
+                    background: @white;
+                    height: 5px;
+                    width: 80%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    background: @black;
+
+                    &:before, &:after {
+                        transition: all, 0.5s;
+
+                        content: '';
+                        display: block;
+                        height: 5px;
+                        width: 100%;
+
+                        position: absolute;
+                        top: 10px;
+
+                        background: @black;
+                    }
+
+                    &:after {
+                        bottom: -10px;
+                    }
+
+                    &:before {
+                        top: -10px;
+                    }
+                }
+
+                &.showMenu {
+
+                    span {
+                        background: transparent;
+
+                        &:before {
+                            top: 0;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                        }
+
+                        &:after {
+                            top: 0;
+                            transform: rotate(-45deg);
+                            -ms-transform: rotate(-45deg);
+                        }
+
+                    }
+
+                    & + ul {
+                        width: 250px;
+                        z-index: 100;
+                    }
+
+                }
+            }
+
+            ul {
+                transition: all, 0.5s;
+                width: 0;
+                position: absolute;
+                top: 120px;
+                right: 0;
+                border-bottom-left-radius: 5px;
+                padding-bottom: 10px;
+                background: @white;
+                overflow: hidden;
+
+                li {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+
+                    a {
+                        width: 100%;
+                        padding: 10px 0 10px 25px;
+                    }
+
+                    .dropDownMenu {
+                        width: 100%;
+                        border: none;
+                        display: block;
+                        position: static;
+                        opacity: 1;
+                        padding: 0 0 0 10px;
+
+                        li {
+                            padding: 0;
+                            a {
+                                margin: 0 0 10px 30px;
+                                padding-left: 7px;
+                                color: #15161b;
+                                border-left: 3px solid #fe9a3f;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.swiper-container {
+    width: 100%;
+    max-width: @mainWidthContent - 50px;
+    box-sizing: border-box;
+    padding: 0 40px;
+
+    .swiper-wrapper {
+        margin-bottom: 50px;
+        .swiper-slide {
+            width: 335px;
+            min-height: 330px;
+            padding-bottom: 20px;
+            margin-top: 90px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .swiper-scrollbar {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        width: 30px;
+        height: 40px;
+        left: 0;
+        transition: background 0.4s;
+        background: url("/images/reviews/arrowLeft.png") no-repeat center;
+        &:hover {
+            background: url("/images/reviews/arrowLeftHover.png") no-repeat center;
+        }
+    }
+
+    .swiper-button-next {
+        width: 30px;
+        height: 40px;
+        right: 0;
+        transition: background 0.4s;
+        background: url("/images/reviews/arrowRight.png") no-repeat center;
+        &:hover {
+            background: url("/images/reviews/arrowRightHover.png") no-repeat center;
+        }
+    }
+
+    .swiper-pagination {
+        position: static;
+        .swiper-pagination-bullet {
+            width: 18px;
+            height: 18px;
+            background: #e9eff3;
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                background: #f18420;
+            }
+        }
+    }
+}
