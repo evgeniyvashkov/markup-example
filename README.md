@@ -1,1 +1,1 @@
-[open on GH-Pages](https://evgeniyvashkov.github.io/markup-example)
+[Show on GH-Pages](https://evgeniyvashkov.github.io/markup-example)
